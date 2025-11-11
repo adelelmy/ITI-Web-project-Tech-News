@@ -1,0 +1,184 @@
+/* General Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0d0d0d;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+nav img.logo { width: 100px; }
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav ul li a { text-decoration: none; color: #fff; }
+nav input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+/* About Section */
+
+.about {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.about p {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Approach Section */
+
+.approach {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.approach .cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #171a1fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: left;
+  margin: 1%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.link{
+    text-decoration: none;
+    color: #ffffff;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #ff0033;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #ccc;
+}
+.card img {
+  border-radius: 10px;
+}
+
+/* Team Section */
+
+.team {
+  text-align: center;
+  padding: 5% 20%;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.member {
+  background: #171a1fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 2%; /* نفس عرض كروت الـ tester */
+  transition: 0.3s;
+  text-align: center;
+  cursor: pointer;
+}
+
+.member:hover {
+  transform: translateY(-5px);
+}
+
+.member img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+  width: 40%;
+  height: 35%;
+}
+.member .am{
+    width: 33%;
+    height: 25%;
+}
+
+.member h3 {
+  margin-bottom: 5px;
+}
+
+.role {
+  color: #ff0033;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+
+/* Footer */
+footer {
+  background: #b0061d;
+  padding: 20px;
+  text-align: center;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+footer ul li { color: white; cursor: pointer; }
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .team-grid {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .team-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

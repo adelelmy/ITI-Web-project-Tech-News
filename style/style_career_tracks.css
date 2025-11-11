@@ -1,0 +1,139 @@
+/* General Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background-color: #0d0d0d; color: #fff; }
+
+/* Navbar */
+nav {
+  background: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+nav img.logo { width: 100px; }
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav ul li a { text-decoration: none; color: #fff; }
+nav input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Hero Section */
+.hero {
+  background: #4b0c16;
+  padding: 80px 200px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.hero p { 
+  font-size: 18px; 
+  margin: 20px auto;
+  max-width: 700px;
+  line-height: 1.6;
+}
+.hero button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Section Titles */
+section { padding: 50px 200px; }
+section h2 { margin-bottom: 40px; font-size: 32px; text-align: center; }
+
+/* Career Cards Grid */
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.career-card {
+  background: #2a2a2a;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.career-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 180px;
+  background: linear-gradient(135deg, #666, #999);
+  border-radius: 15px 15px 0 0;
+}
+.career-icon {
+  position: relative;
+  z-index: 2;
+  width: 120px;
+  height: 120px;
+  margin: 30px auto 20px;
+  font-size: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.career-card h4 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+.career-card p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ccc;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 2;
+}
+.career-card a {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 5px;
+  background: #e50914;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+
+/* Specific card backgrounds */
+.frontend::before { background: url("../images/frontend.png") center/cover no-repeat; }
+.backend::before { background: url("../images/backend.png") center/cover no-repeat; }
+.fullstack::before { background: url("../images/fullstack.png") center/cover no-repeat; }
+.qa::before { background: url("../images/testing.png") center/cover no-repeat; }
+.data::before { background: url("../images/DataScience.jpg") center/cover no-repeat; }
+.ai::before { background: url("../images/ai.png") center/cover no-repeat; }
+.cyber::before { background: url("../images/cyber.png") center/cover no-repeat; }
+
+/* Footer */
+footer {
+  background: #b0061d;
+  padding: 20px;
+  text-align: center;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+footer ul li { color: white; cursor: pointer; }

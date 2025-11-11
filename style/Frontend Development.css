@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: #000;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background: #000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+nav img.logo { width: 100px; }
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav ul li a { text-decoration: none; color: #fff; }
+nav input {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+/* Hero */
+.hero {
+  background: url("6-1.png") center/cover no-repeat;
+  text-align: center;
+  padding: 150px 20px;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+.hero h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+.hero p {
+  margin: 15px 0;
+  font-size: 25px;
+  color: #ddd;
+}
+.hero .btn {
+  display: inline-block;
+  padding: 10px 30px;
+  background: #ff0033;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Section */
+.section {
+  padding: 40px 40px;
+  text-align: center;
+}
+.section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ff0033;
+  display: inline-block;
+}
+.section p {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #171a1fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: left;
+  margin: 1%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.no{
+  cursor:default;
+}
+.link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 18px;
+  margin-right: 50%;
+}
+.card p {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 15px;
+}
+.card .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 6px 20px;
+  background: #000000;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.card .btn:hover {
+  opacity: 0.9;
+}
+.card img {
+  border-radius: 10px;
+  margin-right: 100%;
+}
+
+/* Roadmap */
+.roadmap {
+  list-style: none;
+  padding-left: 0;
+}
+.roadmap li {
+  text-align: left;
+  width: 380px;
+  padding: 12px;
+  margin-left: 120px;
+  /* background: #000000; */
+  /* margin-bottom: 10px; */
+}
+
+/* Footer */
+/* Footer */
+footer {
+  background: #b0061d;
+  padding: 20px;
+  text-align: center;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+footer ul li { color: white; cursor: pointer; }
+
